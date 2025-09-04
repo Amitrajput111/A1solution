@@ -1,0 +1,42 @@
+html {
+  scroll-behavior: smooth;
+}
+.card:hover {
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.hero-title {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+.hero-lead {
+  animation: fadeInUp 1.5s ease forwards;
+  opacity: 0;
+}
+
+.hero-buttons {
+  animation: fadeInUp 2s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.btn-primary:hover, .btn-outline-light:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+footer a:hover {
+  color: #0d6efd;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
