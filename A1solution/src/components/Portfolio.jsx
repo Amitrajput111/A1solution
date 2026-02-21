@@ -4,17 +4,17 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 const projects = [
   {
     name: "Hire Flow",
-    desc: "Job search platform with smart matching and application tracking",
+    desc: "MERN stack job search platform with smart matching and real-time notifications",
     link: "#",
   },
   {
     name: "Stayora",
-    desc: "Home rental marketplace with booking and property management",
+    desc: "Full-stack home rental marketplace built with MongoDB, Express, React & Node.js",
     link: "#",
   },
   {
     name: "AI Learning Hub",
-    desc: "Interactive AI-powered learning platform with personalized courses",
+    desc: "MERN-based AI-powered learning platform with personalized course recommendations",
     link: "#",
   },
 ];

@@ -3,9 +3,9 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import { FaLaptopCode, FaMobileAlt, FaCloud } from "react-icons/fa";
 
 const services = [
-  { title: "Web Development", icon: <FaLaptopCode size={50} />, desc: "Responsive websites using React & Node.js" },
-  { title: "Mobile Apps", icon: <FaMobileAlt size={50} />, desc: "iOS & Android apps development" },
-  { title: "Cloud Solutions", icon: <FaCloud size={50} />, desc: "Scalable cloud infrastructure & DevOps" },
+  { title: "Web Development", icon: <FaLaptopCode size={50} />, desc: "Full-stack web apps using MERN stack (MongoDB, Express, React, Node.js)" },
+  { title: "Mobile Apps", icon: <FaMobileAlt size={50} />, desc: "Cross-platform mobile applications with React Native" },
+  { title: "Cloud Solutions", icon: <FaCloud size={50} />, desc: "Scalable cloud infrastructure with AWS and DevOps automation" },
 ];
 
 const Services = () => {
