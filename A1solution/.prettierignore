@@ -1,0 +1,18 @@
+# Dependencies
+node_modules
+
+# Production
+dist
+build
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+
+# Cache
+.cache
+.vscode
+.idea
