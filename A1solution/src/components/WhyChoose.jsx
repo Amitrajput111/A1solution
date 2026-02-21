@@ -12,14 +12,14 @@ const points = [
 
 const WhyChoose = () => {
   return (
-    <section className="py-5 section-primary text-white text-center">
+    <section className="py-5 section-why text-white text-center">
       <Container>
-        <h2 className="mb-5">Why Choose A1Solution</h2>
+        <h2 className="mb-5 text-white">Why Choose A1Solution</h2>
         <Row className="justify-content-center">
           {points.map((point, index) => (
             <Col md={6} lg={2} key={index} className="mb-4">
-              <div className="why-choose-card h-100">
-                <FaCheckCircle size={30} className="mb-2" />
+              <div className="why-card">
+                <FaCheckCircle size={30} className="mb-3" />
                 <p className="mb-0">{point}</p>
               </div>
             </Col>
