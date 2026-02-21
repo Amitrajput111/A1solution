@@ -1,11 +1,12 @@
 :root {
-  --primary: #2563eb;
-  --primary-dark: #1e40af;
-  --secondary: #0891b2;
-  --accent: #f97316;
+  --primary: #3b82f6;
+  --primary-dark: #2563eb;
+  --hero-yellow: #fbbf24;
+  --hero-orange: #f59e0b;
+  --card-blue: #0ea5e9;
   --dark: #0f172a;
   --gray: #64748b;
-  --light: #f1f5f9;
+  --light: #f8fafc;
 }
 
 * {
@@ -34,7 +35,7 @@ body {
 .navbar-brand {
   font-weight: 700;
   font-size: 1.5rem;
-  color: var(--primary) !important;
+  color: var(--hero-orange) !important;
 }
 
 .nav-link {
@@ -45,12 +46,12 @@ body {
 }
 
 .nav-link:hover {
-  color: var(--primary) !important;
+  color: var(--hero-orange) !important;
 }
 
 /* Hero */
 .hero-section {
-  background: linear-gradient(to bottom right, #1e40af, #2563eb);
+  background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 50%, #fcd34d 100%);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -60,12 +61,14 @@ body {
 .hero-title {
   animation: fadeInUp 0.8s ease forwards;
   opacity: 0;
+  color: #1e293b;
 }
 
 .hero-lead {
   animation: fadeInUp 1.2s ease forwards;
   opacity: 0;
   font-size: 1.25rem;
+  color: #334155;
 }
 
 .hero-buttons {
@@ -87,7 +90,7 @@ body {
 /* Buttons */
 .btn-light {
   background: #ffffff;
-  color: var(--primary);
+  color: var(--hero-orange);
   border: none;
   font-weight: 600;
   padding: 0.75rem 2rem;
@@ -102,8 +105,9 @@ body {
 }
 
 .btn-outline-light {
-  border: 2px solid #ffffff;
-  color: #ffffff;
+  border: 2px solid #1e293b;
+  color: #1e293b;
+  background: transparent;
   font-weight: 600;
   padding: 0.75rem 2rem;
   border-radius: 6px;
@@ -111,13 +115,13 @@ body {
 }
 
 .btn-outline-light:hover {
-  background: #ffffff;
-  color: var(--primary);
+  background: #1e293b;
+  color: #ffffff;
   transform: translateY(-2px);
 }
 
 .btn-primary {
-  background: var(--primary);
+  background: var(--card-blue);
   border: none;
   font-weight: 600;
   padding: 0.75rem 2rem;
@@ -126,9 +130,9 @@ body {
 }
 
 .btn-primary:hover {
-  background: var(--primary-dark);
+  background: #0284c7;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
 }
 
 /* Sections */
@@ -148,35 +152,35 @@ h2 {
 
 /* Cards */
 .card {
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
+  border: none;
+  border-radius: 12px;
   transition: all 0.3s;
-  background: #ffffff;
+  background: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
+  color: #ffffff;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  border-color: var(--primary);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(14, 165, 233, 0.3);
 }
 
 .card-title {
   font-weight: 600;
-  color: #0f172a;
+  color: #ffffff;
 }
 
 .card-text {
-  color: var(--gray);
+  color: #e0f2fe;
 }
 
 /* Service Icons */
 .service-icon {
-  color: var(--primary);
+  color: #ffffff;
 }
 
 /* Why Choose Section */
 .section-why {
-  background: linear-gradient(135deg, #0891b2 0%, #2563eb 100%);
+  background: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
 }
 
 .why-card {
@@ -195,10 +199,41 @@ h2 {
 /* Portfolio */
 #portfolio .card {
   overflow: hidden;
+  background: #ffffff;
+  color: #1e293b;
+  border: 1px solid #e2e8f0;
+}
+
+#portfolio .card:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+#portfolio .card-title {
+  color: #0f172a;
+}
+
+#portfolio .card-text {
+  color: var(--gray);
 }
 
 #portfolio .card-body {
   padding: 2rem;
+}
+
+/* Testimonials */
+#testimonials .card {
+  background: #ffffff;
+  color: #1e293b;
+  border: 1px solid #e2e8f0;
+}
+
+#testimonials .card:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.fst-italic {
+  color: var(--gray);
+  font-size: 1.1rem;
 }
 
 /* Contact Form */
@@ -210,8 +245,8 @@ h2 {
 }
 
 .form-control:focus {
-  border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  border-color: var(--card-blue);
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
 }
 
 /* Footer */
@@ -231,14 +266,8 @@ footer a {
 }
 
 footer a:hover {
-  color: var(--primary);
+  color: var(--hero-yellow);
   transform: scale(1.1);
-}
-
-/* Testimonials */
-.fst-italic {
-  color: var(--gray);
-  font-size: 1.1rem;
 }
 
 /* Responsive */
