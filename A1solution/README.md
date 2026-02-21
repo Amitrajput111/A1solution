@@ -1,12 +1,127 @@
-# React + Vite
+# A1Solution - Professional Software Development
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with React, Vite, and Bootstrap showcasing software development services.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design**: Mobile-first approach with Bootstrap 5
+- **Modern UI/UX**: Smooth animations with AOS (Animate On Scroll)
+- **Component-Based Architecture**: Modular React components
+- **Fast Performance**: Powered by Vite for lightning-fast HMR
+- **SEO Optimized**: Proper meta tags and semantic HTML
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React 19
+- **Build Tool**: Vite 6
+- **Styling**: Bootstrap 5 + Custom CSS
+- **Icons**: React Icons
+- **Animations**: AOS (Animate On Scroll)
+- **Code Quality**: ESLint
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+```bash
+# Install dependencies
+npm install
+```
+
+### Development
+
+```bash
+# Start development server
+npm run dev
+```
+
+The application will be available at `http://localhost:5173`
+
+### Build
+
+```bash
+# Create production build
+npm run build
+```
+
+### Preview Production Build
+
+```bash
+# Preview production build locally
+npm run preview
+```
+
+### Linting
+
+```bash
+# Run ESLint
+npm run lint
+```
+
+## Project Structure
+
+```
+A1solution/
+├── public/              # Static assets
+├── src/
+│   ├── assets/         # Images and media files
+│   ├── components/     # React components
+│   │   ├── Header.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Services.jsx
+│   │   ├── Portfolio.jsx
+│   │   ├── WhyChoose.jsx
+│   │   ├── Testimonials.jsx
+│   │   ├── Contact.jsx
+│   │   └── Footer.jsx
+│   ├── App.jsx         # Main app component
+│   ├── main.jsx        # Entry point
+│   └── index.css       # Global styles
+├── index.html          # HTML template
+├── vite.config.js      # Vite configuration
+└── package.json        # Dependencies and scripts
+```
+
+## Components
+
+- **Header**: Navigation bar with smooth scroll links
+- **Hero**: Landing section with CTA buttons
+- **Services**: Service offerings showcase
+- **Portfolio**: Project portfolio display
+- **WhyChoose**: Key differentiators section
+- **Testimonials**: Client testimonials
+- **Contact**: Contact form with validation
+- **Footer**: Social links and copyright
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'feat: add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## Commit Convention
+
+This project follows [Conventional Commits](https://www.conventionalcommits.org/):
+
+- `feat:` - New features
+- `fix:` - Bug fixes
+- `docs:` - Documentation changes
+- `style:` - Code style changes (formatting, etc.)
+- `refactor:` - Code refactoring
+- `test:` - Adding or updating tests
+- `chore:` - Maintenance tasks
+
+## License
+
+© 2025 A1Solution. All rights reserved.
+
+## Contact
+
+For inquiries, please use the contact form on the website or reach out via social media.
