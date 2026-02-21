@@ -6,11 +6,9 @@ import Portfolio from "./components/Portfolio.jsx";
 import WhyChoose from "./components/WhyChoose.jsx";
 import Testimonials from "./components/Testimonials.jsx";
 import Contact from "./components/Contact.jsx";
-import Footer from "./components/Footer.jsx"
-;
+import Footer from "./components/Footer.jsx";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 
@@ -34,5 +32,3 @@ const App = () => {
 };
 
 export default App;
-
-
