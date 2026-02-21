@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { FaCheckCircle } from "react-icons/fa";
 
 const points = [
@@ -12,18 +12,16 @@ const points = [
 
 const WhyChoose = () => {
   return (
-    <section className="py-5 bg-primary text-white text-center">
+    <section className="py-5 section-primary text-white text-center">
       <Container>
         <h2 className="mb-5">Why Choose A1Solution</h2>
         <Row className="justify-content-center">
           {points.map((point, index) => (
             <Col md={6} lg={2} key={index} className="mb-4">
-              <Card className="h-100 bg-transparent border-0 text-white">
-                <Card.Body>
-                  <FaCheckCircle size={30} className="mb-2" />
-                  <Card.Text>{point}</Card.Text>
-                </Card.Body>
-              </Card>
+              <div className="why-choose-card h-100">
+                <FaCheckCircle size={30} className="mb-2" />
+                <p className="mb-0">{point}</p>
+              </div>
             </Col>
           ))}
         </Row>

@@ -14,10 +14,10 @@ const Services = () => {
       <Container>
         <h2 className="mb-5 text-center">Our Services</h2>
         <Row>
-          {services.map((s, idx) => (  // ✅ use idx instead of undefined 'index'
+          {services.map((s, idx) => (
             <Col md={4} key={idx} className="mb-4" data-aos="fade-up" data-aos-delay={idx * 100}>
               <Card className="h-100 text-center shadow-sm p-3">
-                <div className="mb-3">{s.icon}</div>
+                <div className="mb-3 service-icon">{s.icon}</div>
                 <Card.Title>{s.title}</Card.Title>
                 <Card.Text>{s.desc}</Card.Text>
               </Card>

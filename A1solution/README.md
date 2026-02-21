@@ -122,6 +122,10 @@ This project follows [Conventional Commits](https://www.conventionalcommits.org/
 
 © 2025 A1Solution. All rights reserved.
 
+## Developer
+
+**Amit Singh Rajput**
+
 ## Contact
 
 For inquiries, please use the contact form on the website or reach out via social media.

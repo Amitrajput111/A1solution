@@ -4,7 +4,7 @@ import heroImg from "../assets/hero-img.png";
 
 const Hero = () => {
   return (
-    <section className="bg-primary text-white text-center py-5" style={{ minHeight: "100vh", display: "flex", alignItems: "center", paddingTop: "80px" }}>
+    <section className="hero-section text-white text-center py-5">
       <Container>
         <h1 className="display-3 fw-bold mb-4 hero-title">Welcome to A1Solution</h1>
         <p className="lead mb-5 hero-lead">

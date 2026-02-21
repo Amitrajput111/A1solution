@@ -3,6 +3,8 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "author": "Amit Singh Rajput",
+  "description": "Professional portfolio website showcasing software development services",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
