@@ -3,18 +3,18 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
 const projects = [
   {
-    name: "Myntra Clone",
-    desc: "React + Node.js e-commerce demo",
+    name: "Hire Flow",
+    desc: "Job search platform with smart matching and application tracking",
     link: "#",
   },
   {
-    name: "Instagram Clone",
-    desc: "React + Firebase social app",
+    name: "Stayora",
+    desc: "Home rental marketplace with booking and property management",
     link: "#",
   },
   {
-    name: "SaaS Dashboard",
-    desc: "Analytics dashboard demo",
+    name: "AI Learning Hub",
+    desc: "Interactive AI-powered learning platform with personalized courses",
     link: "#",
   },
 ];
